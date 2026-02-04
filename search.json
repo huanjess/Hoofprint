@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "To understand how land is used in New York, we developed a two-layer classification system. The first layer identifies broad land types, that is, cropland, pasture and grazing land, forest, urban and built areas, and miscellaneous. The second layer dives deeper into agricultural land with sub-categories that reflect likely end use, particularly for crops associated with livestock feed.\nAgricultural land was subdivided into categories such as:\n\nFeed crops, including corn silage, hay, and alfalfa, which are, by definition, used for livestock feed\nMixed-use crops, such as field corn and soybeans, which serve both feed and other markets\nFood crops, such as fruits, vegetables, and potatoes, whose primary use is human consumption\n\nDefinitions, as well as inclusion and exclusion criteria, for these classes have been established based on national production-use data. For instance, alfalfa and other hay crops are treated as 100% animal feed crops based on their agronomic and market use; soybeans are considered feed-dominant because the bulk of the crop is processed into soybean meal used in livestock rations (yet formally still mixed-use); and corn grain is treated as mixed-use with a significant share expected to go into feed, ethanol, and food uses based on national supply-and-disappearance tables (USDA Economic Research Service).\nAn important methodological limitation is the treatment of land as having a single or static use. Recent research highlights that multiple cropping, defined as the cultivation of more than one crop on the same land within a year or season, is widespread and has significant implications for land-use efficiency and environmental outcomes. Yet it is rarely captured in land-use assessments that assume monocropping as the default system (https://www.nature.com/articles/s43247-025-02724-0). As a result, acreage-based maps may underrepresent the functional diversity and intensity of agricultural land, particularly where feed crops or cover crops occur on the same land.\nFurther, emerging multi-use land practices such as the co-location of solar infrastructure with agricultural production (agrivoltaics), further reinforce the importance of moving beyond binary land use classifications (https://www.solarpowerworldonline.com/2025/11/nyserda-grants-7-million-to-co-locate-solar-and-agriculture-throughout-new-york/). While the project at present assigns each pixel to a dominant land-use category for clarity, ease of visualization, and consistency, these developments underscore that land use is not always exclusive or singular. This is essential for accurate interpretation of land use maps and future land use planning, even if current datasets do not allow us to represent these dynamics spatially."
+  },
+  {
+    "objectID": "methodology.html#land-use-classification-framework",
+    "href": "methodology.html#land-use-classification-framework",
+    "title": "Methodology",
+    "section": "",
+    "text": "To understand how land is used in New York, we developed a two-layer classification system. The first layer identifies broad land types, that is, cropland, pasture and grazing land, forest, urban and built areas, and miscellaneous. The second layer dives deeper into agricultural land with sub-categories that reflect likely end use, particularly for crops associated with livestock feed.\nAgricultural land was subdivided into categories such as:\n\nFeed crops, including corn silage, hay, and alfalfa, which are, by definition, used for livestock feed\nMixed-use crops, such as field corn and soybeans, which serve both feed and other markets\nFood crops, such as fruits, vegetables, and potatoes, whose primary use is human consumption\n\nDefinitions, as well as inclusion and exclusion criteria, for these classes have been established based on national production-use data. For instance, alfalfa and other hay crops are treated as 100% animal feed crops based on their agronomic and market use; soybeans are considered feed-dominant because the bulk of the crop is processed into soybean meal used in livestock rations (yet formally still mixed-use); and corn grain is treated as mixed-use with a significant share expected to go into feed, ethanol, and food uses based on national supply-and-disappearance tables (USDA Economic Research Service).\nAn important methodological limitation is the treatment of land as having a single or static use. Recent research highlights that multiple cropping, defined as the cultivation of more than one crop on the same land within a year or season, is widespread and has significant implications for land-use efficiency and environmental outcomes. Yet it is rarely captured in land-use assessments that assume monocropping as the default system (https://www.nature.com/articles/s43247-025-02724-0). As a result, acreage-based maps may underrepresent the functional diversity and intensity of agricultural land, particularly where feed crops or cover crops occur on the same land.\nFurther, emerging multi-use land practices such as the co-location of solar infrastructure with agricultural production (agrivoltaics), further reinforce the importance of moving beyond binary land use classifications (https://www.solarpowerworldonline.com/2025/11/nyserda-grants-7-million-to-co-locate-solar-and-agriculture-throughout-new-york/). While the project at present assigns each pixel to a dominant land-use category for clarity, ease of visualization, and consistency, these developments underscore that land use is not always exclusive or singular. This is essential for accurate interpretation of land use maps and future land use planning, even if current datasets do not allow us to represent these dynamics spatially."
+  },
+  {
+    "objectID": "methodology.html#data-sources-and-integration-approach",
+    "href": "methodology.html#data-sources-and-integration-approach",
+    "title": "Methodology",
+    "section": "Data Sources and Integration Approach",
+    "text": "Data Sources and Integration Approach\nThe mapping work integrates multiple spatial and statistical data sources:\n\nNational Land Cover Database (NLCD): Baseline land cover across New York State\nU.S. Department of Agriculture (USDA) Major Uses of Land (MLU): Provides statewide acreage benchmarks for agricultural categories\nUSDA Economic Research Service (ERS) Supply and Disappearance Tables: National data for understanding how crops are used\nNew York State Department of Environmental Conservation (DEC) and Protected Areas Data: State-wide conservation and public land boundaries that contextualize agricultural use.\nUSDA National Agriculture Statistics Services (NASS) Crop and Livestock Statistics: Provides production, acreage, and inventory data.\nCrop Use Allocation Ratios: derived from USDA ERS supply and disappearance tables, which inform the allocation of mixed-use crops between feed and human/industrial uses."
+  },
+  {
+    "objectID": "methodology.html#agricultural-livestock-data",
+    "href": "methodology.html#agricultural-livestock-data",
+    "title": "Methodology",
+    "section": "Agricultural Livestock Data",
+    "text": "Agricultural Livestock Data\nLivestock inventories, for dairy and beef cattle, were correlated with crop production data to assess how livestock distributions are associated with feed crop production patterns. This also includes examining the links between dairy cow inventories to corn silage acreage, supporting interpretations of agricultural zoning and cropping decisions."
+  },
+  {
+    "objectID": "methodology.html#limitations",
+    "href": "methodology.html#limitations",
+    "title": "Methodology",
+    "section": "Limitations",
+    "text": "Limitations\nState-specific allocation data does not exist for many crops. That is, we do not have New York data showing what fraction of New York-grown corn goes to feed v. human use. To address this, we use national allocation ratios from ERS.\nMaps cannot show livestock consumption patterns. Consumption data reflects demand (which may include imports) rather than what is produced on New York land.\nLivestock type distinctions (such as dairy vs. beef cattle) cannot be directly mapped into land categories. These distinctions will be described qualitatively."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "New York Agriculture: Through the Years",
+    "section": "",
+    "text": "Hoofprint: New York Agricultural Land Use\n\n\n\n\nIndustrial animal agriculture plays a significant role in shaping land use in New York State.\n\n\n\n\nWhile forests, conserved lands, and urban centers often dominate public understanding of American landscapes, a substantial share of New York’s actively managed land is tied to agricultural production.\n\n\n\n\nThe land is particularly dedicated to livestock feed and grazing. The Hoofprint project aims to make the footprint of that system visible.\n\n\n\n\nThrough detailed mapping and analysis, we distinguish land use by purpose, especially examining the land producing feed for animals versus food for humans."
+  },
+  {
+    "objectID": "index.html#agriculture-dominates-actively-managed-land",
+    "href": "index.html#agriculture-dominates-actively-managed-land",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Agriculture Dominates Actively Managed Land",
+    "text": "Agriculture Dominates Actively Managed Land\nPreliminary mapping and quantitative data reveal that a substantial proportion of New York’s actively managed land is agricultural, and much of that is tied to livestock feed production and grazing. Cropland devoted to feed and forage crops, combined with grassland pasture and range, represents a significant share of agricultural acreage."
+  },
+  {
+    "objectID": "index.html#forage-and-feed-crops-are-central",
+    "href": "index.html#forage-and-feed-crops-are-central",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Forage and Feed Crops Are Central",
+    "text": "Forage and Feed Crops Are Central\nCropping patterns show the concentration of silage, hay, and alfalfa, all of which are used exclusively for livestock feed. National and state production data indicate that these crops account for a large share of cropland acreage in the state, particularly in counties with high dairy density."
+  },
+  {
+    "objectID": "index.html#dairy-cattle-drive-feed-crop-production",
+    "href": "index.html#dairy-cattle-drive-feed-crop-production",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Dairy Cattle Drive Feed Crop Production",
+    "text": "Dairy Cattle Drive Feed Crop Production\nRegression analysis demonstrates a strong statistical relationship between dairy cow inventories and acreage of key feed crops like corn silage, reinforcing the central role that dairy production plays in structuring land use. In contrast, beef cattle show a much weaker or inconsistent association, reflecting more diffused production systems."
+  },
+  {
+    "objectID": "index.html#feed-consumption-reinforces-agricultural-intensity",
+    "href": "index.html#feed-consumption-reinforces-agricultural-intensity",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Feed Consumption Reinforces Agricultural Intensity",
+    "text": "Feed Consumption Reinforces Agricultural Intensity\nWhile not directly presentable in a map, feed consumption estimates show that New York is a substantial consumer of livestock feed ingredients, especially dairy cattle. This underscores the demand side of animal agriculture and complements the supply side observations from crop and land data, even as we reiterate that consumption figures cannot substitute for maps of what is produced within the state."
+  },
+  {
+    "objectID": "index.html#land-use-change-and-conversion-pressure",
+    "href": "index.html#land-use-change-and-conversion-pressure",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Land Use Change and Conversion Pressure",
+    "text": "Land Use Change and Conversion Pressure\nAlthough net agricultural acreage has remained relatively stable in New York over the last decade, there is evidence of land use transitions between forest, cropland, and pasture. In some regions, marginal pastureland is being converted to row crop production for feed, while other areas are seeing agricultural land converted to low-density residential or non-agricultural use. These dynamics have implications for habitat fragmentation, water management, and rural development patterns.\nWhile we don’t directly measure land use change over time in this project, the spatial distribution of cropland, pasture, and forest lands highlights regions where land use transitions are most likely to occur. Prior research and agricultural trends data suggest that pressures from feed crop demand, development, and farm consolidation can drive shifts among pasture, cropland, and non-agricultural uses. According to a 2025 audit by the New York State Comptroller’s Office, USDA Census data shows that NY state lost roughly 365,000 acres of farmland and nearly 2,800 farms between 2017 and 2022, equivalent to an area larger than 430 Central Parks. The audit attributed these changes to financial pressure on farmers, increasing land value, and development pressures, including conversion to residential, commercial, and, in some cases, renewable energy uses such as solar arrays on agricultural land. These loss patterns, while not directly mapped in the current project, provide important context and suggest that land use dynamics in New York are not static, and that pressures on farmland, including feed crop land, may influence future land-use distributions."
+  },
+  {
+    "objectID": "index.html#carbon-opportunity-costs-of-feed-cropland",
+    "href": "index.html#carbon-opportunity-costs-of-feed-cropland",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Carbon Opportunity Costs of Feed Cropland",
+    "text": "Carbon Opportunity Costs of Feed Cropland\nLarge areas of New York’s cropland are dedicated to feed crops that could otherwise support alternative land uses with greater carbon sequestration potential, such as reforestation, afforestation, or restoration of native grasslands. The concept of carbon opportunity cost (COC) highlights the foregone climate benefits associated with keeping land in high-emission agricultural use instead of allowing it to recover carbon naturally. In regions dominated by feed production for dairy, the COC may represent a substantial but often overlooked component of the livestock system’s total climate footprint.\nOur data reveals that substantial areas of New York’s cropland are devoted to feed production, particularly for dairy systems. From a land-use perspective, this raises questions about carbon opportunity costs, or the foregone climate benefits that could accrue if some land was instead allocated to lower-emission or carbon-sequestering uses. While this project does not estimate carbon outcomes directly, it identifies the spatial footprint of cropland used for animal feed as a key input for climate modeling. An interesting article in which they have quantified the hidden “environmental costs” of food – https://www.nytimes.com/interactive/2024/09/19/climate/food-costs-protein-environment.html."
+  },
+  {
+    "objectID": "index.html#climate-impacts-of-land-intensive-livestock-systems",
+    "href": "index.html#climate-impacts-of-land-intensive-livestock-systems",
+    "title": "New York Agriculture: Through the Years",
+    "section": "Climate Impacts of Land-Intensive Livestock Systems",
+    "text": "Climate Impacts of Land-Intensive Livestock Systems\nNew York’s dairy and livestock industries are major contributors to agricultural greenhouse gas emissions, particularly methane from enteric fermentation and manure management, and nitrous oxide from feed production. The spatial concentration of livestock operations, especially in areas with intensive corn silage and hay cultivation, amplifies localized emissions and ties land use directly to climate outcomes. At the same time, emissions from industrial cattle systems remain highly underestimated, due in part to a lack of granular, state-specific data on feed production, sourcing, and use. Insufficient feed data is a critical driver of uncertainty in emissions estimates, compounded by rapid changes in land use, evolving production practices, and limited temporal resolution in available datasets. These data gaps and dynamics contribute to wide variability in emissions modeling results and make it difficult to fully capture the climate impacts of land-intensive livestock systems. More broadly, the contribution of land use and livestock production to global temperature increases remains a significantly under-researched area, underscoring the importance of improved land use mapping and data integration as foundational inputs for climate analysis and accountability."
+  }
+]
