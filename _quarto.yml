@@ -1,0 +1,23 @@
+execute:
+  freeze: auto
+
+project:
+  type: website
+
+website:
+  title: "Hoofprint"
+  navbar:
+    logo-href: about.qmd
+    left:
+      - href: about.qmd
+        text: "About"
+      - href: ny.qmd
+        text: "New York"
+      - href: mn.qmd
+        text: "Minnesota"
+      - href: ia.qumd
+        text: "Iowa"
+      - href: methodology.qmd
+        text: "Methodology"
+      
+

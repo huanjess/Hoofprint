@@ -1,0 +1,62 @@
+/* css styles */
+
+body {
+  background-color: black !important;
+  color: white !important;
+}
+
+.sticky-col-stack {
+  background-color: black;
+}
+
+.sticky {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 1.8rem !important;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cr-sticky img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: black !important;
+  font-family: "Times New Roman", Times, serif !important;
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+}
+
+#quarto-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#quarto-document-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.page-layout-full {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.narrative:empty,
+.narrative:blank {
+  display: none !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+

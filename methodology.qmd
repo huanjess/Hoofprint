@@ -1,0 +1,103 @@
+---
+title: "Methodology"
+format:
+  closeread-html:
+    remove-header-space: true
+    self-contained: true
+    css: styles.css
+    cr-style:
+      narrative-font-family: '"Times New Roman", Times, serif'
+      narrative-font-size: 2.2rem
+      narrative-overlay-max-width: "2000px"
+      section-background-color: "black"
+      narrative-background-color-sidebar: "black"
+      narrative-text-color-sidebar: "white"
+      poem-font-family: '"Times New Roman", Times, serif'
+
+page-layout: full
+execute:
+  freeze: auto
+---
+
+::: {.cr-section layout="sidebar-right"}
+
+**New York Methodology** @cr-NYmap
+
+*Land Use Classification Framework* @cr-NYmap
+
+To understand how land is used in New York, we developed a two-layer classification system. The first layer identifies broad land types, such as cropland, pasture and grazing land, forest, urban and built areas, and miscellaneous. The second layer dives deeper into agricultural land with sub-categories that reflect likely end use, particularly for crops associated with livestock feed. @cr-class_text
+
+Agricultural land was subdivided into categories such as: @cr-class_text
+
+- Feed crops, including corn silage, hay, and alfalfa, which are used for livestock feed. @cr-class_text
+
+- Mixed-use crops, such as field corn and soybeans, which serve both feed and other markets.  @cr-class_text
+
+- Food crops, such as fruits, vegetables, and potatoes, whose primary use is human consumption. @cr-class_text
+
+
+::: {#cr-class_text}
+*Land Use Classification Framework*
+:::
+ 
+
+Definitions, as well as inclusion and exclusion criteria, for these classes have been established based on national production-use data. For instance, alfalfa and other hay crops are treated as 100% animal feed crops based on their agronomic and market use; soybeans are considered feed-dominant because the bulk of the crop is processed into soybean meal used in livestock rations (yet formally still mixed-use); and corn grain is treated as mixed-use with a significant share expected to go into feed, ethanol, and food uses based on national supply-and-disappearance tables (cite USDA Economic Research Service). @cr-class_text
+
+
+An important methodological limitation is the treatment of land as having a single or static use. Recent research indicates that multiple cropping, defined as the cultivation of more than one crop on the same land within a year or season, is widespread and has significant implications for land-use efficiency and environmental outcomes (cite?). Yet it is rarely captured in land-use assessments that assume monocropping as the default system (Waha et al., 2025). As a result, acreage-based maps may underrepresent the functional diversity and intensity of agricultural land, particularly where feed crops or cover crops occur on the same land. @cr-class_text 
+
+
+Further, emerging multi-use land practices such as the co-location of solar infrastructure with agricultural production (“agrivoltaics”) further reinforce the importance of moving beyond binary land use classifications (Pickerel, 2025). While the project at present assigns each pixel to a dominant land-use category for clarity, ease of visualization, and consistency, these developments underscore that land use is not always exclusive or singular. This is essential for accurate interpretation of land use maps and future land use planning even if current datasets do not allow us to represent these dynamics spatially. @cr-class_text
+
+ 
+ The mapping work integrates multiple spatial and statistical data sources: @cr-sources
+
+- National Land Cover Database (NLCD): Baseline land cover across New York State. @cr-sources
+
+- U.S. Department of Agriculture (USDA) Major Uses of Land (MLU): Provides statewide acreage benchmarks for agricultural categories. @cr-sources
+- USDA Economic Research Service (ERS) Supply and Disappearance Tables: National data for understanding how crops are used. @cr-sources
+
+- New York State Department of Environmental Conservation (DEC) and Protected Areas Data: State-wide conservation and public land boundaries that contextualize agricultural use. @cr-sources
+
+- USDA National Agriculture Statistics Services (NASS) Crop and Livestock Statistics: Provides production, acreage, and inventory data. @cr-sources
+
+- Crop Use Allocation Ratios: derived from USDA ERS supply and disappearance tables, which inform the allocation of mixed-use crops between feed and human/industrial uses. @cr-sources
+
+::: {#cr-sources}
+*Data Sources and Integration Approach*
+:::
+
+The NLCD (2018) provides raster-based land cover data at 30-meter resolution, which was cropped to the New York State boundary to define the underlying spatial extent of land cover categories. The MLU dataset (2026) provides statewide acreage totals, in thousands of acres, across six major land-use groups, namely cropland, grassland, forest land, special uses, urban land, and miscellaneous land. These MLU totals serve as the authoritative quantitative benchmarks for the proportional representation of land use in the generated maps. @cr-data_sources
+
+ 
+Rather than mapping individual NLCD pixels directly, the project translates the MLU acreage totals into a standardized set of equal-area map units (“tiles”), each representing approximately 125,000 acres. This approach allows land-use proportions to be communicated clearly and consistently, while avoiding the visual complexity and false precision that would result from displaying millions of individual raster cells. For each land-use category, the number of tiles required to represent the MLU acreage total was calculated by dividing the total acreage in that category by 125,000 acres and rounding to the nearest whole tile. Using this procedure, New York’s land base was represented by 277 tiles in total, distributed across categories as follows: cropland (38 tiles), grassland (22 tiles), forest land (145 tiles), special uses (47 tiles), urban land (24 tiles), and miscellaneous land (1 tile). @cr-data_sources
+
+::: {#cr-data_sources}
+*Data Sources and Integration Approach*
+:::
+ 
+ Livestock inventories, for dairy and beef cattle, were correlated with crop production data to assess how livestock distributions are associated with feed crop production patterns. This also includes examining the links between dairy cow inventories to corn silage acreage, supporting interpretations of agricultural zoning and cropping decisions. @cr-ag_text
+
+::: {#cr-ag_text}
+*Agricultural Livestock Data*
+
+:::
+
+- State-specific allocation data does not exist for many crops. That is, we do not have New York data showing what fraction of New York-grown corn goes to feed v. human use. To address this, we use national allocation ratios from ERS. @cr-lim_text
+
+- Maps cannot show livestock consumption patterns. Consumption data reflects demand (which may include imports) rather than what is produced on New York land. @cr-lim_text
+
+- Livestock type distinctions (i.e. dairy vs. beef cattle) cannot be directly mapped into land categories. These distinctions have been described qualitatively. @cr-lim_text
+
+- Pastureland is measured through two distinct data sources, the USDA MLU categories and the USDA Census of Agriculture. The definition of pastures in the latter is narrower than the former as it does not include pasture ranges, and hence, the two figures are not directly comparable. @cr-lim_text
+
+::: {#cr-lim_text}
+*Limitations*
+:::
+
+::: {#cr-NYmap}
+![](images/NY/NY_spatial_map.png)
+:::
+
+
+:::
