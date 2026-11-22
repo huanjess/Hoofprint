@@ -5506,16 +5506,22 @@ padding: 0;
 }
 
 .navbar {
-position: absolute !important;
+position: fixed !important;
 top: 0 !important;
 left: 0 !important;
 width: 100% !important;
 z-index: 9999 !important;
-background: transparent !important;
-padding: 0 !important;
+background: rgba(255, 255, 255, 0.7) !important; 
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+transition: transform 0.3s ease;
+padding: 0.3rem 1rem !important;
 margin: 0 !important;
 border: none !important;
 font-family: "Times New Roman", Times, serif !important;
+}
+.navbar.nav-hidden {
+transform: translateY(-100%) !important;
 }
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-link,
@@ -5560,7 +5566,7 @@ width: auto !important;
 height: auto !important;
 object-fit: contain !important;
 object-position: center !important;
-margin: auto !important; 
+margin: auto !important;
 }
 
 .cr-sticky img[src*="USDA_aerial"],
@@ -5597,7 +5603,13 @@ transition: opacity 0.5s ease-in-out;
 align-content: start !important;
 padding-top: 4rem !important;
 }
-</style>
+
+.long-text {
+font-size: 1.5rem !important;
+line-height: 1.45;
+max-height: 90vh;
+overflow-y: auto;
+}</style>
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -5630,12 +5642,16 @@ padding-top: 4rem !important;
 <span class="menu-text">Minnesota</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ia.qumd"> 
+    <a class="nav-link" href="./ia.html"> 
 <span class="menu-text">Iowa</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./methodology.html"> 
+    <a class="nav-link" href="./Methodology2.html"> 
 <span class="menu-text">Methodology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Comparing_States.html"> 
+<span class="menu-text">State Comparison</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -5654,13 +5670,13 @@ padding-top: 4rem !important;
       <!-- user-provided yaml closeread style options -->
       <style>
 :root {
---cr-narrative-text-color-sidebar: black;
---cr-poem-font-family: “Times New Roman”, Times, serif;
---cr-narrative-font-family: “Times New Roman”, Times, serif;
---cr-narrative-overlay-max-width: 600px;
---cr-narrative-background-color-sidebar: white;
 --cr-narrative-font-size: 2.2rem;
+--cr-narrative-font-family: “Times New Roman”, Times, serif;
+--cr-narrative-background-color-sidebar: white;
 --cr-section-background-color: white;
+--cr-narrative-overlay-max-width: 600px;
+--cr-poem-font-family: “Times New Roman”, Times, serif;
+--cr-narrative-text-color-sidebar: black;
 }
 </style>
     
@@ -5726,22 +5742,22 @@ padding-top: 4rem !important;
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-fig1">
+<div class="trigger new-trigger" data-focus-on="cr-fig1" data-scale-by="0.7">
 <div class="narrative">
 <p>Over the study period, Minnesota’s farm structure shifted toward fewer and larger operations. The number of farm operations fell from 80,839 in 2002 and a near-identical 80,992 in 2007 to 65,531 in 2022, a decline of about 19%.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-fig2">
+<div class="trigger new-trigger" data-focus-on="cr-fig2" data-scale-by="0.7">
 <div class="narrative">
 <p>Average farm size moved in the opposite direction, dipping from 340 acres in 2002 to 332 in 2007 before rising steadily to 388 acres in 2022.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-fig3">
 <div class="narrative">
-<p>Total land in farms contracted more modestly, from about 26.9 million to 25.4 million acres, indicating that production is becoming concentrated on fewer, larger operations. These trends are illustrated in Figures 1 through 4 below.{scale-by=0.65}</p>
+<p>Total land in farms contracted more modestly, from about 26.9 million to 25.4 million acres, indicating that production is becoming concentrated on fewer, larger operations. These trends are illustrated in Figures 1 through 4 below.{scale-by=0.7}</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-fig4">
+<div class="trigger new-trigger" data-focus-on="cr-fig4" data-scale-by="0.7">
 <div class="narrative">
 <p>Total land in farms contracted more modestly, from about 26.9 million to 25.4 million acres, indicating that production is becoming concentrated on fewer, larger operations. These trends are illustrated in Figures 1 through 4 below.</p>
 </div>
@@ -5865,12 +5881,12 @@ padding-top: 4rem !important;
 <p>The following maps use a simplified, proportional visualization approach to show how land is allocated across major categories such as forest, cropland, grassland, and urban land.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-pan-to="30%,10%" data-focus-on="cr-spatial" data-scale-by="3.3">
+<div class="trigger new-trigger" data-focus-on="cr-spatial" data-pan-to="30%,10%" data-scale-by="3.3">
 <div class="narrative">
 <p>Each colored square (“tile”) represents approximately 110,000 acres of land.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-pan-to="-98%,-10%" data-focus-on="cr-spatial" data-scale-by="3">
+<div class="trigger new-trigger" data-focus-on="cr-spatial" data-pan-to="-98%,-10%" data-scale-by="3">
 <div class="narrative">
 <p>The total number of tiles in each category matches official statewid acreage totals from the U.S. Department of Agriculture’s Major Uses of Land (MLU) Statistics.</p>
 </div>
@@ -5909,7 +5925,7 @@ padding-top: 4rem !important;
 <p><em>Agriculture Dominates Actively Managed Land</em></p>
 </div>
 </div>
-<div class="trigger">
+<div class="trigger new-trigger" data-focus-on="cr-strip">
 <div class="narrative">
 <p><em>Agricultural Land Linked to Livestock Systems</em></p>
 </div>
@@ -5934,7 +5950,7 @@ padding-top: 4rem !important;
 <p><em>Feed and Forage Crops Are Central</em></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-corn_prop">
+<div class="trigger new-trigger" data-focus-on="cr-corn_prop" data-scale-by="0.7">
 <div class="narrative">
 <p>Corn and soybeans define Minnesota’s agricultural production system and underpin both feed and industrial demand. They occupy over 15 million acres, making them the dominant crops across the state. Grain corn accounts for approximately 95% of harvested corn acreage, and silage corn accounts for 5%.</p>
 </div>
@@ -5962,7 +5978,7 @@ padding-top: 4rem !important;
 </div>
 <div class="cr-section cr-column-screen overlay-center">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="0.75" data-focus-on="cr-mn_corn">
+<div class="trigger new-trigger" data-focus-on="cr-mn_corn" data-scale-by="0.75">
 <div class="narrative">
 <p>Corn serves multiple end uses. In addition to its role in livestock feed, a significant portion is directed toward ethanol. State-level data indicates that 34% of Minnesota corn is allocated to ethanol production.</p>
 </div>
@@ -5996,12 +6012,12 @@ padding-top: 4rem !important;
 <p>Most of the soybean output is crushed into soybean meal and oil, with the meal used extensively in livestock rations. Soybean use in biodiesel processing represents an additional end use that, while smaller than feed and food applications, has fluctuated in recent years.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-bd">
+<div class="trigger new-trigger" data-focus-on="cr-bd" data-scale-by="0.7">
 <div class="narrative">
 <p>Minnesota processed approximately 20.7 million bushels of soybeans for biodiesel in 2022, declining to approximately 18.4 million bushels by 2024.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-bd">
+<div class="trigger new-trigger" data-focus-on="cr-bd" data-scale-by="7">
 <div class="narrative">
 <p>At approximately 5-6% of Minnesota’s total soybean output, biodiesel represents a minority end use, with the substantial majority of soybean production continuing to flow into soybean meal for livestock rations.</p>
 </div>
@@ -6030,7 +6046,7 @@ padding-top: 4rem !important;
 <p><em>Livestock Systems and Feed Demand</em></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-cattle_props">
+<div class="trigger new-trigger" data-focus-on="cr-cattle_props" data-scale-by="0.7">
 <div class="narrative">
 <p>Dairy cows account for approximately 56% and beef cows for 44% of the state’s cows.</p>
 </div>
@@ -6094,7 +6110,7 @@ padding-top: 4rem !important;
 <div class="narrative-col">
 <div class="trigger">
 <div class="narrative">
-<p><em>Crop-Livestock Relationships</em></p>
+<p><span style="display:block; text-align:center;"><em>Crop-Livestock Relationships</em></span></p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-hogs2">
@@ -6121,7 +6137,7 @@ padding-top: 4rem !important;
 </div>
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-reg">
+<div class="trigger new-trigger" data-focus-on="cr-reg" data-scale-by="0.7">
 <div class="narrative">
 <p>County-level regression shows a statistically significant relationship between dairy cow inventories and corn silage acreage, with roughly 0.58 additional acres of silage harvested per additional dairy cow. This indicates a tight linkage between dairy production and feed cropping at the county level.</p>
 </div>
@@ -6131,7 +6147,7 @@ padding-top: 4rem !important;
 <p><em>Land Use Trends and Structural Change</em></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.8" data-focus-on="cr-table">
+<div class="trigger new-trigger" data-focus-on="cr-table" data-scale-by="0.7">
 <div class="narrative">
 <p>The number of farms declined from 80,992 in 2007 to 65,531 in 2022, while average farm size increased from roughly 332 acres to 388 acres over the same period. At the same time, total farmland declined more modestly, from approximately 26.9 million acres to 25.4 million acres.</p>
 </div>
@@ -6141,22 +6157,22 @@ padding-top: 4rem !important;
 <p>This divergence indicates that agricultural production is becoming more concentrated on fewer, larger operations. The increase in farm size alongside relatively stable land in farms suggests intensification rather than expansion, with production increasingly organized around large-scale crop and livestock systems.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.75" data-focus-on="cr-mn_pl">
+<div class="trigger new-trigger" data-focus-on="cr-mn_pl" data-scale-by="0.75">
 <div class="narrative">
 <p>Over the same period, land-use composition within agriculture has shifted. Pastureland declined from a 2007 peak of approximately 2.72 million acres to about 1.52 million acres in 2022, a loss of roughly 1.2 million acres,</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.75" data-focus-on="cr-pl_change">
+<div class="trigger new-trigger" data-focus-on="cr-pl_change" data-scale-by="0.75">
 <div class="narrative">
 <p>while cropland has remained the dominant and relatively stable category at over 25 million acres. The figure to the right shows the county-wise reduction in pastureland in Minnesota. This shift indicates a movement away from pasture-based systems toward cropland-dependent production, particularly feed crops.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.85" data-focus-on="cr-pl_change">
+<div class="trigger new-trigger" data-focus-on="cr-pl_change" data-scale-by="0.85">
 <div class="narrative">
 <p>The persistence of large livestock inventories alongside declining pasture suggests that livestock production is increasingly supported by cropland-based feed systems rather than grazing.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-scale-by="0.85" data-focus-on="cr-row">
+<div class="trigger new-trigger" data-focus-on="cr-row" data-scale-by="0.85">
 <div class="narrative">
 <p>The combination of declining farm numbers, increasing farm size, and stable cropland indicates rising pressure on agricultural land to sustain production. With over 21 million acres of cropland supporting both feed and commodity markets, the system is increasingly dependent on high-output, row-crop production. At the same time, reductions in pasture and modest declines in total farmland suggest that land is being reallocated within agriculture.</p>
 </div>

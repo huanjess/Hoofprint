@@ -5506,16 +5506,22 @@ padding: 0;
 }
 
 .navbar {
-position: absolute !important;
+position: fixed !important;
 top: 0 !important;
 left: 0 !important;
 width: 100% !important;
 z-index: 9999 !important;
-background: transparent !important;
-padding: 0 !important;
+background: rgba(255, 255, 255, 0.7) !important; 
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+transition: transform 0.3s ease;
+padding: 0.3rem 1rem !important;
 margin: 0 !important;
 border: none !important;
 font-family: "Times New Roman", Times, serif !important;
+}
+.navbar.nav-hidden {
+transform: translateY(-100%) !important;
 }
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-link,
@@ -5560,7 +5566,7 @@ width: auto !important;
 height: auto !important;
 object-fit: contain !important;
 object-position: center !important;
-margin: auto !important; 
+margin: auto !important;
 }
 
 .cr-sticky img[src*="USDA_aerial"],
@@ -5597,7 +5603,13 @@ transition: opacity 0.5s ease-in-out;
 align-content: start !important;
 padding-top: 4rem !important;
 }
-</style>
+
+.long-text {
+font-size: 1.5rem !important;
+line-height: 1.45;
+max-height: 90vh;
+overflow-y: auto;
+}</style>
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -5630,12 +5642,16 @@ padding-top: 4rem !important;
 <span class="menu-text">Minnesota</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ia.qumd"> 
+    <a class="nav-link" href="./ia.html"> 
 <span class="menu-text">Iowa</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./methodology.html"> 
+    <a class="nav-link" href="./Methodology2.html"> 
 <span class="menu-text">Methodology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Comparing_States.html"> 
+<span class="menu-text">State Comparison</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -5654,13 +5670,13 @@ padding-top: 4rem !important;
       <!-- user-provided yaml closeread style options -->
       <style>
 :root {
---cr-narrative-overlay-max-width: 600px;
---cr-narrative-text-color-sidebar: black;
---cr-narrative-background-color-sidebar: white;
---cr-narrative-font-size: 2.2rem;
 --cr-section-background-color: white;
---cr-narrative-font-family: “Times New Roman”, Times, serif;
 --cr-poem-font-family: “Times New Roman”, Times, serif;
+--cr-narrative-font-size: 2.2rem;
+--cr-narrative-font-family: “Times New Roman”, Times, serif;
+--cr-narrative-background-color-sidebar: white;
+--cr-narrative-text-color-sidebar: black;
+--cr-narrative-overlay-max-width: 600px;
 }
 </style>
     
